@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2 - Special Offer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 1. Dùng section bao ngoài, chèn background ô xám tối bằng CSS */
+        .offer-section {
+            width: 100%;
+            max-width: 1000px;
+            padding: 80px 20px;
+            text-align: center;
+            color: #ffffff;
+            
+            /* Background hình chiếc ô kèm lớp phủ tối màu (linear-gradient) */
+            background: linear-gradient(rgba(30, 35, 42, 0.85), rgba(30, 35, 42, 0.85)), 
+                        url('https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* 2. Tiêu đề hx */
+        .offer-section h2 {
+            font-size: 32px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* 3. Đoạn văn p */
+        .offer-section p {
+            font-size: 16px;
+            color: #dddddd;
+            margin-bottom: 35px;
+            font-weight: 300;
+        }
+
+        /* 4. Thẻ liên kết a dạng button màu đỏ */
+        .btn-offer {
+            display: inline-block;
+            background-color: #e04332;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #c93b2c;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-offer:hover {
+            background-color: #c93b2c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cấu trúc HTML chuẩn theo hướng dẫn Bài tập 2 -->
+    <section id="special-offer" class="offer-section">
+        <h2>Don't miss this special offer!</h2>
+        <p>Get it now for just $10! the price will be increased after 50 downloads</p>
+        <a href="#" class="btn-offer">Get the latest version of Bootslander</a>
+    </section>
+
+</body>
+</html>

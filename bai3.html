@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3 - Get the Invite</title>
+    <!-- FontAwesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Group bao ngoài theo yêu cầu dùng section */
+        .invite-section {
+            background-color: #f4f5f7;
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 650px;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Biểu tượng lá thư tròn */
+        .icon-circle {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #5bc2c1;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #5bc2c1;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .invite-section h2 {
+            font-size: 32px;
+            color: #222222;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .invite-section p {
+            color: #666666;
+            font-size: 15px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        /* Cấu trúc form nhập liệu[cite: 1] */
+        .invite-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .invite-form input[type="email"] {
+            width: 100%;
+            max-width: 380px;
+            padding: 14px 18px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+            outline: none;
+            font-size: 14px;
+            background-color: #ffffff;
+        }
+
+        .invite-form input[type="email"]::placeholder {
+            color: #aaaaaa;
+        }
+
+        .invite-form button {
+            background-color: #64c2c2;
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .invite-form button:hover {
+            background-color: #4fb0b0;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="invite" class="invite-section">
+        <!-- Biểu tượng FontAwesome[cite: 1] -->
+        <div class="icon-circle">
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+
+        <h2>Get the invite</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.</p>
+
+        <!-- Thẻ form chứa input và button[cite: 1] -->
+        <form action="#" method="POST" class="invite-form">
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <button type="submit">REQUEST INVITE</button>
+        </form>
+    </section>
+
+</body>
+</html>
